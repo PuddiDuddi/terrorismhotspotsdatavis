@@ -1,0 +1,1 @@
+## stratascratch terrorismhotspots project enhanced with snowflake pipeline using dlt
