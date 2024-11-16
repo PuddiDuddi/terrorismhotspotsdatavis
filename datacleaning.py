@@ -33,8 +33,12 @@ def clean_data():
             "nwound",
         ]
     ]
-    usefuldata.loc[:, ["nkill", "nkillter", "nwound"]] = usefuldata.loc[:, ["nkill", "nkillter", "nwound"]].fillna(0)
-    usefuldata.loc[:, ["weapsubtype1_txt", "provstate", "city"]] = usefuldata.loc[:, ["weapsubtype1_txt", "provstate", "city"]].fillna("Unknown")
+    usefuldata.loc[:, ["nkill", "nkillter", "nwound"]] = usefuldata.loc[
+        :, ["nkill", "nkillter", "nwound"]
+    ].fillna(0)
+    usefuldata.loc[:, ["weapsubtype1_txt", "provstate", "city"]] = usefuldata.loc[
+        :, ["weapsubtype1_txt", "provstate", "city"]
+    ].fillna("Unknown")
     usefuldata = usefuldata.fillna("null")
     usefuldata.to_csv("filteredterroristdata.csv", index=False)
     print("Data cleaning completed.")
