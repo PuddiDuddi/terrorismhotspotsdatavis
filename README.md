@@ -1,1 +1,1 @@
-## stratascratch terrorismhotspots project enhanced with snowflake pipeline using dlt
+## stratascratch terrorismhotspots project enhanced with snowflake pipeline using snowflake python connector
